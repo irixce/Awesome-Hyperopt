@@ -1,5 +1,5 @@
 # Awesome-Hyperopt
-<img src="https://gitlab.deepcure.net/external/awesome-hyperopt/raw/master/autohopts.png" width="200" height="200" />
+<img src="autohopts.png" width="200" height="200" />
 
 Web application for scheduling, monitoring and analyzing cloud-based hyper-parameter optimization runs
 

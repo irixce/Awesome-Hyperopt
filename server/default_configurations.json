@@ -1,0 +1,729 @@
+{
+    "classical": {
+        "classification": {
+            "svc": {
+                "display_name": "Support Vector Classification",
+                "selected": true,
+                "error_count": 0,
+                "parameters": {
+                    "C": {
+                        "display_name": "C",
+                        "type": "Categorical",
+                        "selected": [
+                            0.1,
+                            0.5,
+                            1.0
+                        ],
+                        "sequence": [
+                            0.1,
+                            0.5,
+                            1.0
+                        ]
+                    },
+                    "kernel": {
+                        "display_name": "Kernel",
+                        "type": "Categorical",
+                        "selected": [
+                            "linear",
+                            "rbf"
+                        ],
+                        "sequence": [
+                            "linear",
+                            "rbf"
+                        ]
+                    },
+                    "gamma": {
+                        "display_name": "Gamma",
+                        "type": "Categorical",
+                        "selected": [
+                            "auto",
+                            "scale"
+                        ],
+                        "sequence": [
+                            "auto",
+                            "scale"
+                        ]
+                    },
+                    "shrinking": {
+                        "display_name": "Shrinking Heuristic",
+                        "type": "Categorical",
+                        "selected": [
+                            true,
+                            false
+                        ],
+                        "sequence": [
+                            true,
+                            false
+                        ]
+                    },
+                    "probability": {
+                        "display_name": "Probability",
+                        "type": "Categorical",
+                        "selected": [
+                            true
+                        ],
+                        "sequence": [
+                            true
+                        ]
+                    },
+                    "tol": {
+                        "display_name": "Tolerance",
+                        "type": "Categorical",
+                        "selected": [
+                            0.001
+                        ],
+                        "sequence": [
+                            0.001
+                        ]
+                    },
+                    "max_iter": {
+                        "display_name": "Max Iterations",
+                        "type": "Int",
+                        "lower": 50,
+                        "lower_min": 0,
+                        "lower_max": 1000,
+                        "upper": 500,
+                        "upper_min": 0,
+                        "upper_max": 1000,
+                        "quantization": 50,
+                        "quantization_min": 1,
+                        "quantization_max": 1000,
+                        "distribution": "uniform",
+                        "log": false
+                    },
+                    "class_weight": {
+                        "display_name": "Class Weight",
+                        "type": "Categorical",
+                        "selected": [
+                            "balanced"
+                        ],
+                        "sequence": [
+                            "balanced"
+                        ]
+                    }
+                }
+            },
+            "knn": {
+                "display_name": "K-Nearest Neighbors",
+                "selected": true,
+                "error_count": 0,
+                "parameters": {
+                    "n_neighbors": {
+                        "display_name": "Number of Neighbors",
+                        "type": "Int",
+                        "lower": 3,
+                        "lower_min": 0,
+                        "lower_max": 1000,
+                        "upper": 20,
+                        "upper_min": 0,
+                        "upper_max": 1000,
+                        "quantization": 1,
+                        "quantization_min": 1,
+                        "quantization_max": 1000,
+                        "distribution": "uniform",
+                        "log": false
+                    },
+                    "weights": {
+                        "display_name": "Weights",
+                        "type": "Categorical",
+                        "selected": [
+                            "uniform",
+                            "distance"
+                        ],
+                        "sequence": [
+                            "uniform",
+                            "distance"
+                        ]
+                    },
+                    "algorithm": {
+                        "display_name": "Algorithm",
+                        "type": "Categorical",
+                        "selected": [
+                            "auto"
+                        ],
+                        "sequence": [
+                            "auto"
+                        ]
+                    },
+                    "leaf_size": {
+                        "display_name": "Leaf Size",
+                        "type": "Categorical",
+                        "selected": [
+                            30
+                        ],
+                        "sequence": [
+                            30
+                        ]
+                    },
+                    "p": {
+                        "display_name": "P",
+                        "type": "Categorical",
+                        "selected": [
+                            1,
+                            2
+                        ],
+                        "sequence": [
+                            1,
+                            2
+                        ]
+                    },
+                    "metric": {
+                        "display_name": "Metric",
+                        "type": "Categorical",
+                        "selected": [
+                            "minkowski"
+                        ],
+                        "sequence": [
+                            "minkowski"
+                        ]
+                    }
+                }
+            }
+        },
+        "regression": {
+            "linear_reg": {
+                "display_name": "Linear Regression",
+                "selected": true,
+                "parameters": {},
+                "error_count": 0
+            },
+            "logistic_reg": {
+                "display_name": "Logistic Regression",
+                "selected": true,
+                "error_count": 0,
+                "parameters": {
+                    "penalty": {
+                        "display_name": "Penalty",
+                        "type": "Categorical",
+                        "selected": [
+                            "l1",
+                            "l2"
+                        ],
+                        "sequence": [
+                            "l1",
+                            "l2"
+                        ],
+                        "error_count": 0
+                    },
+                    "C": {
+                        "display_name": "C",
+                        "type": "Float",
+                        "lower": 1,
+                        "lower_min": 0,
+                        "lower_max": 1000,
+                        "upper": 3,
+                        "upper_min": 0,
+                        "upper_max": 1000,
+                        "quantization": null,
+                        "quantization_min": null,
+                        "quantization_max": null,
+                        "distribution": "uniform",
+                        "log": false,
+                        "error_count": 0
+                    },
+                    "class_weight": {
+                        "display_name": "Class Weight",
+                        "type": "Categorical",
+                        "selected": [
+                            "balanced"
+                        ],
+                        "sequence": [
+                            "balanced"
+                        ],
+                        "error_count": 0
+                    },
+                    "verbose": {
+                        "display_name": "Verbose",
+                        "type": "Categorical",
+                        "selected": [
+                            1
+                        ],
+                        "sequence": [
+                            1
+                        ],
+                        "error_count": 0
+                    },
+                    "n_jobs": {
+                        "display_name": "Number of Jobs",
+                        "type": "Categorical",
+                        "selected": [
+                            1
+                        ],
+                        "sequence": [
+                            1
+                        ],
+                        "error_count": 0
+                    }
+                }
+            },
+            "svr": {
+                "display_name": "Support Vector Regression",
+                "selected": true,
+                "error_count": 0,
+                "parameters": {
+                    "C": {
+                        "display_name": "C",
+                        "type": "Categorical",
+                        "selected": [
+                            0.1,
+                            0.5,
+                            1.0,
+                            5,
+                            100
+                        ],
+                        "sequence": [
+                            0.1,
+                            0.5,
+                            1.0,
+                            5,
+                            100
+                        ],
+                        "error_count": 0
+                    },
+                    "epsilon": {
+                        "display_name": "Epsilon",
+                        "type": "Float",
+                        "lower": 0.05,
+                        "lower_min": 0,
+                        "lower_max": 1000,
+                        "upper": 0.5,
+                        "upper_min": 0,
+                        "upper_max": 1000,
+                        "quantization": null,
+                        "quantization_min": null,
+                        "quantization_max": null,
+                        "distribution": "uniform",
+                        "log": false,
+                        "error_count": 0
+                    },
+                    "kernel": {
+                        "display_name": "Kernel",
+                        "type": "Categorical",
+                        "selected": [
+                            "linear",
+                            "rbf"
+                        ],
+                        "sequence": [
+                            "linear",
+                            "rbf"
+                        ],
+                        "error_count": 0
+                    },
+                    "gamma": {
+                        "display_name": "Gamma",
+                        "type": "Categorical",
+                        "selected": [
+                            "auto",
+                            "scale"
+                        ],
+                        "sequence": [
+                            "auto",
+                            "scale"
+                        ],
+                        "error_count": 0
+                    },
+                    "shrinking": {
+                        "display_name": "Shrinking",
+                        "type": "Categorical",
+                        "selected": [
+                            true,
+                            false
+                        ],
+                        "sequence": [
+                            true,
+                            false
+                        ],
+                        "error_count": 0
+                    },
+                    "tol": {
+                        "display_name": "Tolerance",
+                        "type": "Categorical",
+                        "selected": [
+                            0.001
+                        ],
+                        "sequence": [
+                            0.001
+                        ],
+                        "error_count": 0
+                    },
+                    "max_iter": {
+                        "display_name": "Max Iterations",
+                        "type": "Int",
+                        "lower": 50,
+                        "lower_min": 0,
+                        "lower_max": 1000,
+                        "upper": 500,
+                        "upper_min": 0,
+                        "upper_max": 1000,
+                        "quantization": 50,
+                        "quantization_min": null,
+                        "quantization_max": null,
+                        "distribution": "uniform",
+                        "log": false,
+                        "error_count": 0
+                    }
+                }
+            },
+            "knn_reg": {
+                "display_name": "K-Nearest Neighbors Regression",
+                "selected": true,
+                "error_count": 0,
+                "parameters": {
+                    "n_neighbors": {
+                        "display_name": "Number of Neighbors",
+                        "type": "Int",
+                        "lower": 3,
+                        "lower_min": 0,
+                        "lower_max": 1000,
+                        "upper": 20,
+                        "upper_min": 0,
+                        "upper_max": 1000,
+                        "quantization": 1,
+                        "quantization_min": 1,
+                        "quantization_max": 1000,
+                        "distribution": "uniform",
+                        "log": false,
+                        "error_count": 0
+                    },
+                    "weights": {
+                        "display_name": "Weights",
+                        "type": "Categorical",
+                        "selected": [
+                            "uniform",
+                            "distance"
+                        ],
+                        "sequence": [
+                            "uniform",
+                            "distance"
+                        ],
+                        "error_count": 0
+                    },
+                    "algorithm": {
+                        "display_name": "Algorithm",
+                        "type": "Categorical",
+                        "selected": [
+                            "auto"
+                        ],
+                        "sequence": [
+                            "auto"
+                        ],
+                        "error_count": 0
+                    },
+                    "leaf_size": {
+                        "display_name": "Leaf Size",
+                        "type": "Categorical",
+                        "selected": [
+                            30
+                        ],
+                        "sequence": [
+                            30
+                        ],
+                        "error_count": 0
+                    },
+                    "p": {
+                        "display_name": "P",
+                        "type": "Categorical",
+                        "selected": [
+                            1,
+                            2
+                        ],
+                        "sequence": [
+                            1,
+                            2
+                        ],
+                        "error_count": 0
+                    },
+                    "metric": {
+                        "display_name": "Metric",
+                        "type": "Categorical",
+                        "selected": [
+                            "minkowski"
+                        ],
+                        "sequence": [
+                            "minkowski"
+                        ],
+                        "error_count": 0
+                    }
+                }
+            }
+        }
+    },
+    "neural_networks": {
+        "classification": {
+            "neural_net_classification": {
+                "display_name": "Neural Network - Classification",
+                "selected": true,
+                "error_count": 0,
+                "parameters": {
+                    "loss": {
+                        "display_name": "Loss",
+                        "type": "Categorical",
+                        "selected": [
+                            "mse"
+                        ],
+                        "sequence": [
+                            "mse"
+                        ],
+                        "error_count": 0
+                    },
+                    "num_layers": {
+                        "display_name": "Number of Layers",
+                        "type": "Int",
+                        "lower": 1,
+                        "lower_min": 0,
+                        "lower_max": 1000,
+                        "upper": 3,
+                        "upper_min": 0,
+                        "upper_max": 1000,
+                        "quantization": null,
+                        "quantization_min": null,
+                        "quantization_max": null,
+                        "distribution": "uniform",
+                        "log": false,
+                        "error_count": 0
+                    },
+                    "num_units": {
+                        "display_name": "Number of Units",
+                        "type": "Int",
+                        "lower": 5,
+                        "lower_min": 0,
+                        "lower_max": 1000,
+                        "upper": 10,
+                        "upper_min": 0,
+                        "upper_max": 1000,
+                        "quantization": null,
+                        "quantization_min": null,
+                        "quantization_max": null,
+                        "distribution": "uniform",
+                        "log": false,
+                        "error_count": 0
+                    },
+                    "learning_rate": {
+                        "display_name": "Learning Rate",
+                        "type": "Float",
+                        "lower": 1e-5,
+                        "lower_min": 0,
+                        "lower_max": 1000,
+                        "upper": 1e-2,
+                        "upper_min": 0,
+                        "upper_max": 1000,
+                        "quantization": null,
+                        "quantization_min": null,
+                        "quantization_max": null,
+                        "distribution": "uniform",
+                        "log": false,
+                        "error_count": 0
+                    },
+                    "dropout": {
+                        "display_name": "Dropout",
+                        "type": "Float",
+                        "lower": 0.0,
+                        "lower_min": 0,
+                        "lower_max": 1000,
+                        "upper": 0.3,
+                        "upper_min": 0,
+                        "upper_max": 1000,
+                        "quantization": null,
+                        "quantization_min": null,
+                        "quantization_max": null,
+                        "distribution": "uniform",
+                        "log": false,
+                        "error_count": 0
+                    },
+                    "batch_norm": {
+                        "display_name": "Batch Normalization",
+                        "type": "Categorical",
+                        "selected": [
+                            true,
+                            false
+                        ],
+                        "sequence": [
+                            true,
+                            false
+                        ],
+                        "error_count": 0
+                    },
+                    "optimizer": {
+                        "display_name": "Optimizer",
+                        "type": "Categorical",
+                        "selected": [
+                            "sgd",
+                            "adam",
+                            "nadam"
+                        ],
+                        "sequence": [
+                            "sgd",
+                            "adam",
+                            "nadam"
+                        ],
+                        "error_count": 0
+                    },
+                    "activation": {
+                        "display_name": "Activation",
+                        "type": "Categorical",
+                        "selected": [
+                            "relu",
+                            "softplus",
+                            "elu"
+                        ],
+                        "sequence": [
+                            "relu",
+                            "softplus",
+                            "elu"
+                        ],
+                        "error_count": 0
+                    },
+                    "activation_final": {
+                        "display_name": "Activation Final",
+                        "type": "Categorical",
+                        "selected": [
+                            "linear"
+                        ],
+                        "sequence": [
+                            "linear"
+                        ],
+                        "error_count": 0
+                    }
+                }
+            }
+        },
+        "regression": {
+            "neural_net_reg": {
+                "display_name": "Neural Network - Regression",
+                "selected": true,
+                "error_count": 0,
+                "parameters": {
+                    "loss": {
+                        "display_name": "Loss",
+                        "type": "Categorical",
+                        "selected": [
+                            "mse"
+                        ],
+                        "sequence": [
+                            "mse"
+                        ],
+                        "error_count": 0
+                    },
+                    "num_layers": {
+                        "display_name": "Number of Layers",
+                        "type": "Int",
+                        "lower": 1,
+                        "lower_min": 0,
+                        "lower_max": 1000,
+                        "upper": 3,
+                        "upper_min": 0,
+                        "upper_max": 1000,
+                        "quantization": null,
+                        "quantization_min": null,
+                        "quantization_max": null,
+                        "distribution": "uniform",
+                        "log": false,
+                        "error_count": 0
+                    },
+                    "num_units": {
+                        "display_name": "Number of Units",
+                        "type": "Int",
+                        "lower": 5,
+                        "lower_min": 0,
+                        "lower_max": 1000,
+                        "upper": 10,
+                        "upper_min": 0,
+                        "upper_max": 1000,
+                        "quantization": null,
+                        "quantization_min": null,
+                        "quantization_max": null,
+                        "distribution": "uniform",
+                        "log": false,
+                        "error_count": 0
+                    },
+                    "learning_rate": {
+                        "display_name": "Learning Rate",
+                        "type": "Float",
+                        "lower": 1e-5,
+                        "lower_min": 0,
+                        "lower_max": 1000,
+                        "upper": 1e-2,
+                        "upper_min": 0,
+                        "upper_max": 1000,
+                        "quantization": null,
+                        "quantization_min": null,
+                        "quantization_max": null,
+                        "distribution": "uniform",
+                        "log": false,
+                        "error_count": 0
+                    },
+                    "dropout": {
+                        "display_name": "Dropout",
+                        "type": "Float",
+                        "lower": 0.0,
+                        "lower_min": 0,
+                        "lower_max": 1000,
+                        "upper": 0.3,
+                        "upper_min": 0,
+                        "upper_max": 1000,
+                        "quantization": null,
+                        "quantization_min": null,
+                        "quantization_max": null,
+                        "distribution": "uniform",
+                        "log": false,
+                        "error_count": 0
+                    },
+                    "batch_norm": {
+                        "display_name": "Batch Normalization",
+                        "type": "Categorical",
+                        "selected": [
+                            true,
+                            false
+                        ],
+                        "sequence": [
+                            true,
+                            false
+                        ],
+                        "error_count": 0
+                    },
+                    "optimizer": {
+                        "display_name": "Optimizer",
+                        "type": "Categorical",
+                        "selected": [
+                            "sgd",
+                            "adam",
+                            "nadam"
+                        ],
+                        "sequence": [
+                            "sgd",
+                            "adam",
+                            "nadam"
+                        ],
+                        "error_count": 0
+                    },
+                    "activation": {
+                        "display_name": "Activation",
+                        "type": "Categorical",
+                        "selected": [
+                            "relu",
+                            "softplus",
+                            "elu"
+                        ],
+                        "sequence": [
+                            "relu",
+                            "softplus",
+                            "elu"
+                        ],
+                        "error_count": 0
+                    },
+                    "activation_final": {
+                        "display_name": "Activation Final",
+                        "type": "Categorical",
+                        "selected": [
+                            "linear"
+                        ],
+                        "sequence": [
+                            "linear"
+                        ],
+                        "error_count": 0
+                    }
+                }
+            }
+        }
+    }
+}

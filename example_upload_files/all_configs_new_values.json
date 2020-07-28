@@ -1,0 +1,345 @@
+{
+  "classical": {
+    "classification": {
+      "svc": {
+        "C": {
+          "type": "Categorical",
+          "sequence": [
+            "Hi C",
+            "I'm new"
+          ]
+        },
+        "kernel": {
+          "type": "Categorical",
+          "sequence": [
+            "Hi kernel",
+            "I'm new"
+          ]
+        },
+        "gamma": {
+          "type": "Categorical",
+          "sequence": [
+            "Hi gamma",
+            "I'm new",
+            "Me too"
+          ]
+        },
+        "shrinking": {
+          "type": "Categorical",
+          "sequence": [
+            "Hi shrinking",
+            "I'm new",
+            "Me too",
+            "Me three"
+          ]
+        },
+        "probability": {
+          "type": "Categorical",
+          "sequence": [
+            "Hi probability"
+          ]
+        },
+        "tol": {
+          "type": "Categorical",
+          "sequence": [
+            "Hi tol",
+            "I'm new",
+            "Me too"
+          ]
+        },
+        "max_iter": {
+          "type": "Int",
+          "lower": 100,
+          "upper": 100,
+          "quantization": null,
+          "distribution": "normal",
+          "log": true
+        },
+        "class_weight": {
+          "type": "Categorical",
+          "sequence": [
+            "Hi class_weight",
+            "I'm new",
+            "Me too"
+          ]
+        }
+      },
+      "knn": {
+        "n_neighbors": {
+          "type": "Int",
+          "lower": 100,
+          "upper": 100,
+          "quantization": null,
+          "distribution": "normal",
+          "log": true
+        },
+        "weights": {
+          "type": "Categorical",
+          "sequence": [
+            "Hi weights",
+            "I'm new",
+            "Me too",
+            "Me three"
+          ]
+        },
+        "algorithm": {
+          "type": "Categorical",
+          "sequence": [
+            "Hi algorithm",
+            "I'm new"
+          ]
+        },
+        "leaf_size": {
+          "type": "Categorical",
+          "sequence": [
+            "Hi leaf_size",
+            "I'm new",
+            "Me too",
+            "Me three"
+          ]
+        },
+        "p": {
+          "type": "Categorical",
+          "sequence": [
+            "Hi p"
+          ]
+        },
+        "metric": {
+          "type": "Categorical",
+          "sequence": [
+            "Hi metric",
+            "I'm new",
+            "Me too"
+          ]
+        }
+      }
+    },
+    "regression": {
+      "linear_reg": {},
+      "logistic_reg": {
+        "penalty": {
+          "type": "Categorical",
+          "sequence": [
+            "Hi penalty",
+            "I'm new",
+            "Me too",
+            "Me three"
+          ]
+        },
+        "C": {
+          "type": "Int",
+          "lower": 100,
+          "upper": 100,
+          "quantization": 100,
+          "distribution": "normal",
+          "log": true
+        },
+        "class_weight": {
+          "type": "Categorical",
+          "sequence": [
+            "Hi class_weight",
+            "I'm new",
+            "Me too"
+          ]
+        },
+        "verbose": {
+          "type": "Categorical",
+          "sequence": [
+            "Hi verbose",
+            "I'm new"
+          ]
+        },
+        "n_jobs": {
+          "type": "Categorical",
+          "sequence": [
+            "Hi n_jobs",
+            "I'm new",
+            "Me too",
+            "Me three"
+          ]
+        }
+      },
+      "svr": {
+        "C": {
+          "type": "Categorical",
+          "sequence": [
+            "Hi C"
+          ]
+        },
+        "epsilon": {
+          "type": "Int",
+          "lower": 100,
+          "upper": 100,
+          "quantization": 100,
+          "distribution": "normal",
+          "log": true
+        },
+        "kernel": {
+          "type": "Categorical",
+          "sequence": [
+            "Hi kernel",
+            "I'm new",
+            "Me too",
+            "Me three"
+          ]
+        },
+        "gamma": {
+          "type": "Categorical",
+          "sequence": [
+            "Hi gamma"
+          ]
+        },
+        "shrinking": {
+          "type": "Categorical",
+          "sequence": [
+            "Hi kernel",
+            "I'm new",
+            "Me too"
+          ]
+        },
+        "tol": {
+          "type": "Categorical",
+          "sequence": [
+            "Hi tol",
+            "I'm new",
+            "Me too",
+            "Me three"
+          ]
+        },
+        "max_iter": {
+          "type": "Float",
+          "lower": 0.1,
+          "upper": 0.1,
+          "quantization": 0.1,
+          "distribution": "normal",
+          "log": true
+        }
+      },
+      "knn_reg": {
+        "n_neighbors": {
+          "type": "Float",
+          "lower": 0.1,
+          "upper": 0.1,
+          "quantization": null,
+          "distribution": "normal",
+          "log": true
+        },
+        "weights": {
+          "type": "Categorical",
+          "sequence": [
+            "Hi weights",
+            "I'm new",
+            "Me too",
+            "Me three"
+          ]
+        },
+        "algorithm": {
+          "type": "Categorical",
+          "sequence": [
+            "Hi algorithm",
+            "I'm new"
+          ]
+        },
+        "leaf_size": {
+          "type": "Categorical",
+          "sequence": [
+            "Hi leaf_size",
+            "I'm new"
+          ]
+        },
+        "p": {
+          "type": "Categorical",
+          "sequence": [
+            "Hi p"
+          ]
+        },
+        "metric": {
+          "type": "Categorical",
+          "sequence": [
+            "Hi metric",
+            "I'm new"
+          ]
+        }
+      }
+    }
+  },
+  "neural_networks": {
+    "classification": {},
+    "regression": {
+      "neural_net_reg": {
+        "loss": {
+          "type": "Categorical",
+          "sequence": [
+            "Hi loss",
+            "I'm new"
+          ]
+        },
+        "num_layers": {
+          "type": "Float",
+          "lower": 0.1,
+          "upper": 0.1,
+          "quantization": 0.1,
+          "distribution": "normal",
+          "log": true
+        },
+        "num_units": {
+          "type": "Float",
+          "lower": 0.1,
+          "upper": 0.1,
+          "quantization": 0.1,
+          "distribution": "normal",
+          "log": true
+        },
+        "learning_rate": {
+          "type": "Float",
+          "lower": 1e-5,
+          "upper": 1e-2,
+          "quantization": null,
+          "distribution": "uniform",
+          "log": false
+        },
+        "dropout": {
+          "type": "Int",
+          "lower": 100,
+          "upper": 100,
+          "quantization": 100,
+          "distribution": "normal",
+          "log": true
+        },
+        "batch_norm": {
+          "type": "Categorical",
+          "sequence": [
+            "Hi batch_norm",
+            "I'm new",
+            "Me too",
+            "Me three"
+          ]
+        },
+        "optimizer": {
+          "type": "Categorical",
+          "sequence": [
+            "Hi optimizer"
+          ]
+        },
+        "activation": {
+          "type": "Categorical",
+          "sequence": [
+            "Hi activation",
+            "I'm new",
+            "Me too",
+            "Me three"
+          ]
+        },
+        "activation_final": {
+          "type": "Categorical",
+          "sequence": [
+            "Hi activation_final",
+            "I'm new",
+            "Me too",
+            "Me three"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "top" : {
+    "name": {
+      "display_name": "Experiment Name",
+      "value": "",
+      "options": "",
+      "error_count": 0
+    },
+    "worker_class": {
+      "display_name": "Worker Class",
+      "value": "Generic",
+      "options": ["Generic"],
+      "error_count": 0
+    },
+    "data_df": {
+      "display_name": "Path to Data",
+      "value": "",
+      "options": "",
+      "error_count": 0
+    },
+    "answer_column": {
+      "display_name": "Answer Column",
+      "value": "",
+      "options": "",
+      "error_count": 0
+    },
+    "split_type": {
+      "display_name": "Split Type",
+      "value": "train-test",
+      "options": ["train-test","k-fold","user"],
+      "error_count": 0
+    },
+    "split_test_size": {
+      "display_name": "Test Size",
+      "value": 1,
+      "options": "",
+      "min": 0,
+      "max": 1000,
+      "error_count": 0
+    },
+    "problem_type": {
+      "display_name": "Problem",
+      "value": "regression",
+      "options": ["regression","classification"],
+      "error_count": 0
+    },
+    "model_type": {
+      "display_name": "Models",
+      "value": "classical",
+      "options": ["classical","neural_networks"],
+      "error_count": 0
+    }
+  },
+  "resources":  {
+    "max_budget": {
+      "display_name": "Max Budget",
+      "value": 1000.0,
+      "options": "",
+      "min": 0,
+      "max": 1000,
+      "error_count": 0
+    },
+    "min_budget": {
+      "display_name": "Min Budget",
+      "value": 5.0,
+      "options": "",
+      "min": 0,
+      "max": 1000,
+      "error_count": 0
+    },
+    "aws_cpus_per_instances": {
+      "display_name": "AWS CPUs per Instance",
+      "value": 4,
+      "options": "",
+      "min": 0,
+      "max": 1000,
+      "error_count": 0
+    },
+    "aws_max_n_instances": {
+      "display_name": "AWS Max Instances",
+      "value": 50,
+      "options": "",
+      "min": 0,
+      "max": 1000,
+      "error_count": 0
+    },
+    "aws_workers_per_instance": {
+      "display_name": "AWS Workers per Instance",
+      "value": 4,
+      "options": "",
+      "min": 0,
+      "max": 1000,
+      "error_count": 0
+    },
+    "n_iterations": {
+      "display_name": "Number of Iterations",
+      "value": 10,
+      "options": "",
+      "min": 0,
+      "max": 1000,
+      "error_count": 0
+    }
+  },
+  "problem_space": {
+    "positive_threshold": {
+      "display_name": "Positive Threshold",
+      "value": 0.5,
+      "options": "",
+      "min": 0,
+      "max": 1000,
+      "error_count": 0
+    },
+    "high_is_positive": {
+      "display_name": "High is Positive",
+      "value": false,
+      "options": "",
+      "error_count": 0
+    },
+    "loss": {
+      "display_name": "Loss Function",
+      "value": "mse",
+      "options": ["mse","mae","weighted_mse","explained_var","r2_score","top_10_k","top_100_k","spearman","pearson",
+        "log_auc","bedroc","ef_x_0_1","ef_x_r_0_1"],
+      "error_count": 0
+    },
+    "batch_size": {
+      "display_name": "Batch Size",
+      "value": 32,
+      "options": "",
+      "min": 0,
+      "max": 1000,
+      "error_count": 0
+    },
+    "eta": {
+      "display_name": "Learning Rate (eta)",
+      "value": 2,
+      "options": "",
+      "min": 0,
+      "max": 1000,
+      "error_count": 0
+    }
+  }
+}

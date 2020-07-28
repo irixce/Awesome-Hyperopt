@@ -1,0 +1,44 @@
+{
+ "cloud_service": {
+  "display_name": "Cloud Service",
+  "value": "aws",
+  "options": ["aws"],
+  "error_count": 0
+ },
+ "aws_bucket": {
+  "display_name": "AWS Bucket",
+  "value": "gddr",
+  "options": ["gddr"],
+  "error_count": 0
+ },
+ "aws_rds_secrets_name": {
+  "display_name": "AWS RDS Secrets Name",
+  "value": "prod/modelsdb/postgres",
+  "options": ["prod/modelsdb/postgres"],
+  "error_count": 0
+ },
+ "key_pair_name": {
+  "display_name": "AWS Key Pair Name",
+  "value": "deepcure_ohio_research",
+  "options": ["deepcure_ohio_research"],
+  "error_count": 0
+ },
+ "image": {
+  "display_name": "AWS Image",
+  "value": "dc-compute-v1.5.3",
+  "options": ["dc-compute-v1.5.3"],
+  "error_count": 0
+ },
+ "subnet": {
+  "display_name": "AWS Subnet",
+  "value": "DC-Compute",
+  "options": ["DC-Compute"],
+  "error_count": 0
+ },
+ "security_groups": {
+  "display_name": "AWS Security Groups",
+  "value": "DC-VPN",
+  "options": ["DC-VPN"],
+  "error_count": 0
+ }
+}
